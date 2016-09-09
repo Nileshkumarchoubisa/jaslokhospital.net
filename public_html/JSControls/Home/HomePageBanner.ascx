@@ -25,7 +25,8 @@
 
 
                         <a id="A1" runat="server" target="_blank" href='<%#Eval("BannerLink")%>'>
-                            <img class="second-slide" src='<%#Eval("ImageUrl")+"?scale=both&maxwidth=1877&maxheight=557"%>' alt='<%# "Slide" + (Container.ItemIndex + 1).ToString() %>' /></a>
+                            <%--<img class="second-slide" src='<%#Eval("ImageUrl")+"?scale=both&maxwidth=1877&maxheight=557"%>' alt='<%# "Slide" + (Container.ItemIndex + 1).ToString() %>' /></a>--%>
+                            <img class="second-slide" src='<%#Eval("ImageUrl")%>' alt='<%# "Slide" + (Container.ItemIndex + 1).ToString() %>' /></a>
                     </div>
                 </ItemTemplate>
             </asp:Repeater>
