@@ -1,4 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="NewsListing.ascx.cs" Inherits="JSControls_MiddleContent_NewsListing" %>
+<%@ Register Src="~/JSControls/MiddleContent/PagingControl.ascx" TagPrefix="JH" TagName="PagingControl" %>
+
 <div class="all-categories">
 
     <asp:Repeater ID="rptNews" runat="server" OnItemDataBound="rptNews_ItemDataBound">
@@ -45,3 +47,7 @@
         </ItemTemplate>
     </asp:Repeater>
 </div>
+
+<div id="divPAgerControl" runat="server" class="pager">
+         <JH:PagingControl runat="server" ID="PagingControl" />
+  </div>
